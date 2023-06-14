@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 663820c0dcd1db8448a937e35592f5a2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - playerRb: {instanceID: 0}
+  - playerAnim: {instanceID: 0}
+  - explosionParticle: {instanceID: 0}
+  - fireParticle: {instanceID: 0}
+  - fireSound: {fileID: 8300000, guid: 113ee460fadc340e4957a7404a9fbb27, type: 3}
+  - crashSound: {fileID: 8300000, guid: 4bcde6de2166e41e284ec46d8a01fb90, type: 3}
+  - projectilePrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
