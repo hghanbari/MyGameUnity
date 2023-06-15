@@ -37,12 +37,13 @@ public class GameManager : MonoBehaviour
         spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
     }
 
+    // If the missile hits the enemy, it gets points
     public void UpdatScore(int scoreToAad)
     {
         score += scoreToAad;
         scoreText.text = "Score: " + score;
     }
-
+    // If the player hits the enemy
     public void GameOver(Vector3 poisition)
     {
         isGameActive = false;
@@ -52,12 +53,12 @@ public class GameManager : MonoBehaviour
         playeGame.gameObject.SetActive(false);
         gameOver.gameObject.SetActive(true);
     }
-
+    // Reset the all the game
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
+    // Start the game 
     public void StartGame(float s)
     {
         speed = s;
@@ -74,7 +75,7 @@ public class GameManager : MonoBehaviour
         PlayerController.gameObject.SetActive(false);
         gameOver.gameObject.SetActive(false);
     }
-
+    // Visul effect
     public void selfExplosion(Vector3 poisition)
     {
         explosionParticle.transform.position = poisition;
@@ -86,6 +87,7 @@ public class GameManager : MonoBehaviour
         enemyExplosionParticle.transform.position = poisition;
         enemyExplosionParticle.Play();
     }
+    // Suond effect
     public void playFireSound()
     {
         playerAudio.PlayOneShot(fireSound, 1.0f);

@@ -15,6 +15,7 @@ public class DifficultyButton : MonoBehaviour
         button = GetComponent<Button>();
         button.onClick.AddListener(SetDifficulty);
     }
+    // Different game  level player
     void SetDifficulty()
     {
         if(gameObject.name == "EasyButton")
