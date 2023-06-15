@@ -11,7 +11,7 @@ public class RepeatBackground : MonoBehaviour
         repeatWhith= GetComponent<BoxCollider>().size.x / 2;
     }
 
-    // Update is called once per frame
+    // Repeat the backgrand
     void Update()
     {
         if (transform.position.x < startPos.x - repeatWhith)
