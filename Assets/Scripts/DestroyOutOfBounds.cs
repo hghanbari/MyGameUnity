@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-    // Update is called once per frame
+    // Destroy an object out of bounds
     void Update()
     {
         if (transform.position.x > 55)
