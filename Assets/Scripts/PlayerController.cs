@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
 
             transform.position = new Vector3(lowBounds, transform.position.y, transform.position.z);
         }
-
+        // shoot the missile
         if (Input.GetKeyDown(KeyCode.Space) && haspowerup)
         {
             gameManagerScripts.playFireSound();
@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
         else{gameManagerScripts.rocktActive.gameObject.SetActive(false);}
             
     }
+    // deactivate the missile
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Powerup"))
@@ -86,6 +87,7 @@ public class PlayerController : MonoBehaviour
         powerupIndicator[0].gameObject.SetActive(false);
         powerupIndicator[1].gameObject.SetActive(false);
     }
+    // collision playe whit enemy
     private void OnCollisionEnter(Collision collision)
     {
 

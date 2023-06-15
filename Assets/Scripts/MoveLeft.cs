@@ -20,7 +20,7 @@ public class MoveLeft : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    // Speed the enemy en move the left
     void Update()
     {
 
