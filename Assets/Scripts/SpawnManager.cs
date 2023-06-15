@@ -14,13 +14,13 @@ public class SpawnManager : MonoBehaviour
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
-
+    // metoh for spawn
     public void StartSpawning(float speed)
     {
         InvokeRepeating("SpawnEnemy", startDelay, 4 - ((speed * 2) / 10));
         InvokeRepeating("SpawnPowarUp", startDelay, 2);
     }
-
+    // SpawnEnemy
     public void SpawnEnemy()
     {
         if (gameManager.isGameActive == true)
@@ -30,6 +30,7 @@ public class SpawnManager : MonoBehaviour
             Instantiate(enemies[obstacaleIndex], spawnPos, enemies[obstacaleIndex].transform.rotation);
         }
     }
+    // Spawnpowarup
     public void SpawnPowarUp()
     {
         if (gameManager.isGameActive == true)
@@ -38,6 +39,7 @@ public class SpawnManager : MonoBehaviour
             Instantiate(ammo, spawnPos, ammo.transform.rotation);
         }
     }
+    // Spawnplaye
     public void SpawnPlayer()
     {
         Vector3 spawnPos = new Vector3(0, 8, 0);
