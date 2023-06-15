@@ -8,6 +8,7 @@ public class DetectCollisions : MonoBehaviour
     {
         gameManagerScripts = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
+    // Crash rocket with enemy
     private void OnTriggerEnter(Collider other)
     {
         gameManagerScripts.playHitSound();
